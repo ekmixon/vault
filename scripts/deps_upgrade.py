@@ -7,4 +7,4 @@ with open(filename) as f:
     for l in content:
         name = l.split()[0]
         print(name)
-        os.system("go get " + name + "@latest")
+        os.system(f"go get {name}@latest")
